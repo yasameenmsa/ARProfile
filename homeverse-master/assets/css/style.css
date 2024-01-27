@@ -370,11 +370,12 @@ a {
 
 .header-bottom {
   background: var(--white);
-  /* padding-block: 25px; */
+  padding-block: 10px;
 }
 
 .header-bottom .logo img {
-  /* margin-inline: auto; */
+  margin-inline: auto;
+  width: 150px;
 }
 
 .navbar {
@@ -409,6 +410,7 @@ a {
 
 .navbar-top .logo img {
   width: 200px;
+  display: flex;
 }
 
 .nav-close-btn ion-icon {
@@ -1138,7 +1140,13 @@ a {
 
 .footer-brand .logo {
   margin-bottom: 15px;
-  width: 50px;
+  width: 29px;
+  display: flex;
+}
+.footer-brand .logo img {
+  margin-bottom: 15px;
+  width: 200px;
+  display: flex;
 }
 
 .section-text {
