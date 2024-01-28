@@ -257,6 +257,7 @@ a {
 .has-scrollbar {
   display: flex;
   align-items: flex-start;
+  /* align-items: stretch; */
   gap: 15px;
   overflow-x: auto;
   margin-inline: -15px;
@@ -269,6 +270,8 @@ a {
 .has-scrollbar > li {
   min-width: 100%;
   scroll-snap-align: start;
+  /* flex: 1;  Distribute available space equally * /
+  min-width: 0; /* Allow items to shrink past their content size */
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
