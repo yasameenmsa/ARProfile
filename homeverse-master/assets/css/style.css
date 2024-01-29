@@ -975,6 +975,7 @@ a {
 .features-card:is(:hover, :focus) .card-btn {
   color: var(--orange-soda);
 }
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -985,8 +986,6 @@ a {
 
 .blog-card {
   box-shadow: var(--shadow-2);
-  /* width: 150px;
-  margin: 0 auto; */
 }
 
 .blog-card .card-banner {
@@ -998,7 +997,6 @@ a {
   height: 100%;
   object-fit: cover;
   transition: 0.5s ease;
-  border-radius: 100%;
 }
 
 .blog-card:is(:hover, :focus) .card-banner img {
@@ -1057,33 +1055,6 @@ a {
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
   text-transform: uppercase;
-}
-
-/*-----------------------------------*\
-
-/* Add this style for the .blog-list class */
-.blog-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Adjust the gap between items as needed */
-}
-
-/* Assuming each blog card has a class .blog-card, you can style it like this */
-.blog-card {
-  box-shadow: var(--shadow-2);
-  width: calc(
-    25% - 20px
-  ); /* Adjust the width and gap to fit 4 items in a line */
-  margin-bottom: 20px;
-}
-
-/* Optional: Add a media query for responsiveness */
-@media (max-width: 768px) {
-  .blog-card {
-    width: calc(
-      50% - 20px
-    ); /* Adjust for smaller screens to display 2 items in a line */
-  }
 }
 
 /*-----------------------------------*\
