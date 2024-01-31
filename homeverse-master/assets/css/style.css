@@ -541,12 +541,11 @@ a {
 
 @media (min-width: 600px) {
   #heroImage {
-    width: 500px;
-    height: 400px;
+    width: 80%;
+    height: auto;
   }
 }
 
-/* Add more media queries as needed for different breakpoints */
 @media (max-width: 480px) {
   #heroImage {
     width: 100%;
@@ -646,19 +645,31 @@ a {
   #SERVICE
 \*-----------------------------------*/
 
-.service {
-  background: var(--cultured-2);
-  padding-block: var(--section-padding);
-}
-
 .service-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  align-items: stretch; /* Make all items stretch to the height of the tallest one */
+}
+
+.service-cardbg {
+  display: flex;
+  background: var(--white);
+  align-items: stretch;
+}
+.service-list > li {
+  width: calc(33.33% - 20px);
+}
+
+.service {
+  background: var(--cultured-2);
+  padding-block: var(--section-padding);
 }
 
 .service-card {
+  flex: 1;
+
   position: relative;
   background: var(--white);
   text-align: center;
@@ -1568,14 +1579,110 @@ a {
   .about-banner > img {
     width: 100%;
   }
-
+  /* 
   /**
    * SERVICE
    */
-
   .service-list > li {
     width: calc(33.33% - 20px);
   }
+  /* 
+
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .service-card {
+    flex: 1;
+  } */
+  /* 
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------* /
+
+.service {
+  background: var(--cultured-2);
+  padding-block: var(--section-padding);
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  position: relative;
+  background: var(--white);
+  text-align: center;
+  padding: 40px 30px;
+  box-shadow: var(--shadow-2);
+  transition: transform var(--transition);
+}
+
+.service-card:hover,
+.service-card:focus {
+  transform: translateY(-5px);
+}
+
+.service-card .card-icon {
+  width: max-content;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+
+.service-card .card-title {
+  margin-bottom: 15px;
+}
+
+.service-card .card-title > a:hover,
+.service-card .card-title > a:focus {
+  color: var(--orange-soda);
+}
+
+.service-card .card-text {
+  color: var(--cadet);
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.service-card .card-link {
+  color: var(--opal);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.service-card:hover .card-link,
+.service-card:focus .card-link {
+  color: var(--orange-soda);
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--orange-soda);
+  transition: width var(--transition);
+}
+
+.service-card:hover::after,
+.service-card:focus::after {
+  width: 100%;
+}
+
+
+
+ */
 
   /**
    * PROPERTY
