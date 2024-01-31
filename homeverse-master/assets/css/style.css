@@ -533,6 +533,26 @@ a {
 .about {
   padding-block: var(--section-padding);
 }
+#heroImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  #heroImage {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+/* Add more media queries as needed for different breakpoints */
+@media (max-width: 480px) {
+  #heroImage {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .about-banner {
   position: relative;
@@ -615,6 +635,13 @@ a {
   --text-transform: uppercase;
 }
 
+/*-----------------------------------*\
+  #DEVELOPER
+\*-----------------------------------*/
+
+.card-icon-dev {
+  background: var(--white) !important;
+}
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/

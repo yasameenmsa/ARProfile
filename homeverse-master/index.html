@@ -29,6 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+   
   </head>
 
   <body>
@@ -137,6 +138,13 @@
                 </li>
 
                 <li>
+                  <a href="#Developer" class="navbar-link" data-nav-link
+                    >Developer</a
+                  >
+                </li>
+
+                
+                <li>
                   <a href="#property" class="navbar-link" data-nav-link
                     >Property</a
                   >
@@ -193,6 +201,26 @@
         <!-- 
         - #HERO
       -->
+   
+    
+    <!-- <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <!- - Your existing content here -- >
+        </div>
+    
+        <figure class="hero-banner">
+          <img
+            src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434200/AlaaProjects/Profile/footer_logo_oclrce.png"
+            alt="Modern house model"
+            class="w-100"
+          />
+        </figure>
+      </div>
+    </section> -->
+  
+
+
 
         <section class="hero" id="home">
           <div class="container">
@@ -203,26 +231,64 @@
                 <span>AR Real Estate</span>
               </p>
 
-              <h2 class="h1 hero-title">Find Your Dream House By Us test</h2>
+              <h2 class="h1 hero-title">Attain Luxury Residences Without Intermediaries!</h2>
               <p class="hero-text">
-                Discover the finest selection of homes with AR Real Estate. Our
-                dedicated team is committed to helping you find the perfect
-                place to call home. Explore a world of possibilities and make
-                your dream a reality.
+                Secure your dream home without involving agents at AR Real Estate. Connect directly with developers for opulent living spaces. Explore the richness of options and turn your dream of a lavish home into reality.
               </p>
 
-              <button onclick="window.open('https://ar-realstate.com/', '_blank')" class="btn">Make An Enquiry</button>
+              <button onclick="window.open('https://ar-realstate.com/', '_blank')" class="btn">Start Your Journey Now</button>
             </div>
 
             <figure class="hero-banner">
               <img
-                src="./assets/images/hero-banner.png"
+              id="heroImage"
+                src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434200/AlaaProjects/Profile/footer_logo_oclrce.png"
                 alt="Modern house model"
-                class="w-100"
+                class="w-100 "
               />
             </figure>
           </div>
         </section>
+
+
+  
+        <script>
+          const imageLinks = [
+            'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706717371/AlaaProjects/Profile/pzdebl4lnc2euexhj2gw.png',
+            'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706717370/AlaaProjects/Profile/u1zctkaaqnxjhf1urewd.png',
+            'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706717371/AlaaProjects/Profile/mkitis82dp6q86p6mlaj.png',
+            'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434200/AlaaProjects/Profile/footer_logo_oclrce.png',
+
+            // 'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706718154/AlaaProjects/Profile/xgwwalxnwqzy3hx5vsf5.png',
+            // 'https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706718154/AlaaProjects/Profile/pcxbtd8zcxjho1hqmszu.png',
+          ];
+        
+          let currentImageIndex = 0;
+          const heroImage = document.getElementById('heroImage');
+        
+          function changeImage() {
+            fadeOutImage();
+          }
+        
+          function fadeOutImage() {
+            heroImage.style.opacity = 0;
+            setTimeout(() => {
+              currentImageIndex = (currentImageIndex + 1) % imageLinks.length;
+              heroImage.src = imageLinks[currentImageIndex];
+              fadeInImage();
+            }, 50); // Change this value to match the transition duration
+          }
+        
+          function fadeInImage() {
+            heroImage.style.opacity = 1;
+          }
+        
+          // Change image every 5 seconds
+          setInterval(changeImage, 5000);
+        </script>
+    
+    
+
 
         <!-- 
         - #ABOUT
@@ -322,7 +388,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Buy a home</a>
+                    <a href="#">Buy </a>
                   </h3>
 
                   <p class="card-text">
@@ -336,11 +402,11 @@
                   <br />
                   <br />
 
-                  <a href="#" class="card-link">
+                  <!-- <a href="#" class="card-link">
                     <span>Find A Home</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
+                  </a> -->
                 </div>
               </li>
 
@@ -354,7 +420,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Rent a home</a>
+                    <a href="#">Rent </a>
                   </h3>
 
                   <p class="card-text">
@@ -368,11 +434,11 @@
                   </p>
                   <br />
 
-                  <a href="#" class="card-link">
+                  <!-- <a href="#" class="card-link">
                     <span>Find A Home</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
+                  </a> -->
                 </div>
               </li>
 
@@ -386,7 +452,7 @@
                   </div>
 
                   <h3 class="h3 card-title">
-                    <a href="#">Sell a home</a>
+                    <a href="#">Sell</a>
                   </h3>
 
                   <p class="card-text">
@@ -399,16 +465,148 @@
                     homeownership a reality.
                   </p>
 
-                  <a href="#" class="card-link">
+                  <!-- <a href="#" class="card-link">
                     <span>Find A Home</span>
 
                     <ion-icon name="arrow-forward-outline"></ion-icon>
-                  </a>
+                  </a> -->
                 </div>
               </li>
             </ul>
           </div>
         </section>
+<!--
+  #Developer
+-->
+
+
+      <section id="Developer" class="features">
+        <div class="container">
+          <p class="section-subtitle">Our Partner</p>
+
+          <h2 class="h2 section-title">Developer</h2>
+
+          <ul class="features-list">
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon card-icon-dev"
+                >
+                  <img 
+                  
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434199/AlaaProjects/Profile/62f4bcddb4afa_edecz0.jpg"
+                  class="card-icon card-icon-dev"
+
+                  />
+                </div>
+                <h3 class="card-title">Bin Ghatti</h3>
+              </a>
+            </li>
+
+ 
+           
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706440060/AlaaProjects/Profile/1704844854667Ellington_Properties_gdodys.jpg"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title"> Ellington Properties
+                  </h3>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706440059/AlaaProjects/Profile/1704845155990download_fbjdx9.png"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title">Meraas
+                  </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434199/AlaaProjects/Profile/leos_international_logo_lthayj.jpg"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title">LEOS
+                  </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706440060/AlaaProjects/Profile/1704845287094%D8%B5%D9%88%D8%B1%D8%A9_%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8_%D8%A8%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE_1445-06-22_%D9%81%D9%8A_06.35.16_b2da6435_wg6kgk.jpg"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title">Sobha Realty
+                  </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434199/AlaaProjects/Profile/1602761397728_nphap9.jpg"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title">Reportage Prime Properties
+                  </h3>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="features-card">
+                <div
+                
+                class="card-icon card-icon-dev"
+                >
+                  <img      
+                  src="https://res.cloudinary.com/dh1lgpmm4/image/upload/v1706434200/AlaaProjects/Profile/footer_logo_oclrce.png"
+                  class="card-icon card-icon-dev"
+                  />
+                </div>
+                <h3 class="card-title">DANUBE Properties</h3>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </section>
+
 
         <!-- 
         - #PROPERTY
