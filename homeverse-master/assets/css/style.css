@@ -541,8 +541,8 @@ a {
 
 @media (min-width: 600px) {
   #heroImage {
-    width: 600px;
-    height: 500px;
+    width: 500px;
+    height: 400px;
   }
 }
 
