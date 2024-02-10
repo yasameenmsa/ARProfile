@@ -727,6 +727,11 @@ a {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .service-list > li {
+    width: calc(100% - 20px);
+  }
+}
 /*-----------------------------------*\
   #PROPERTY
 \*-----------------------------------*/
